@@ -2,20 +2,20 @@ import {StatusBar} from "expo-status-bar";
 import React from "react";
 import {StyleSheet, View} from 'react-native';
 import { Text } from "react-native-paper";
-import { Link } from "@react-navigation/native";
+import { Link } from "expo-router";
 
 const Index = ()=>{
     return(
         <View style={styles.container}>
       
-      <Text style={styles.title}>Studio las Bratz</Text>
+      <Text style={styles.title}>Quiz</Text>
       <View style={styles.bottomContainer}>
         <Text variant="displayMedium" style={styles.description}>
           Ingresa y agenda tu turno ¿Que esperas?
         </Text>
         <View style={styles.buttonsContainer}>
           <Link href="/Register" style={[styles.button, styles.registerButton]}>
-            <Text style={styles.buttonText}>Ingresar</Text>
+            <Text style={styles.buttonText}>Juega ya!</Text>
           </Link>
         </View>
       </View>
