@@ -71,7 +71,7 @@ const Index = () => {
         <Image
         source={require('../assets/images/nene.png')} // Asegúrate de usar la ruta correcta
         style={styles.image}
-      />
+       />
        
           <Link href="/BienvenidaGames"
             style={styles.button}
