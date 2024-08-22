@@ -7,14 +7,14 @@ import { Link } from "expo-router";
 const Index = ()=>{
     return(
         <View style={styles.container}>
+           <Link href="/Register" style={[styles.button,]}>
+            <Text style={styles.buttonText}>registro</Text>
+          </Link>
       
       <Text style={styles.title}>Quiz</Text>
       <View style={styles.bottomContainer}>
-        <Text variant="displayMedium" style={styles.description}>
-          Ingresa y agenda tu turno ¿Que esperas?
-        </Text>
         <View style={styles.buttonsContainer}>
-          <Link href="/Register" style={[styles.button, styles.registerButton]}>
+          <Link href="/" style={[styles.button, styles.registerButton]}>
             <Text style={styles.buttonText}>Juega ya!</Text>
           </Link>
         </View>
@@ -71,6 +71,7 @@ const styles = StyleSheet.create({
       color: '#ff8cd6',
       fontSize: 16,
       fontWeight: 'bold',
+      alignItems: "center"
     },
   });
   
